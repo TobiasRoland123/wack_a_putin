@@ -1,0 +1,635 @@
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+#instruktioner_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(produktion/forside/instruktioner.svg);
+
+  background-size: cover;
+}
+
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(produktion/forside/forside.svg);
+  background-size: cover;
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(produktion/tab_og_vind/looser.svg);
+
+  background-size: cover;
+}
+
+#play {
+  aspect-ratio: 590/320;
+  width: 16%;
+  left: 40%;
+  top: 58%;
+  position: absolute;
+  background-image: url(produktion/forside/play_btn.svg);
+  background-size: cover;
+}
+
+#settings {
+  aspect-ratio: 145/140;
+  width: 5%;
+  left: 93%;
+  top: 86%;
+  position: absolute;
+  background-image: url(produktion/forside/settings_btn.svg);
+  background-size: cover;
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(produktion/tab_og_vind/winner.svg);
+  background-size: cover;
+}
+
+#vinder_text {
+  position: absolute;
+  top: 22%;
+  left: 7%;
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#taber_text {
+  position: absolute;
+  top: 22%;
+  left: 39%;
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#genstart1 {
+  aspect-ratio: 490/200;
+  position: absolute;
+  width: 21%;
+  top: 66%;
+  left: 50%;
+  background-image: url(produktion/tab_og_vind/restart.svg);
+  background-size: cover;
+}
+
+#genstart2 {
+  aspect-ratio: 490/200;
+  position: absolute;
+  width: 21%;
+  top: 66%;
+  left: 22%;
+  background-image: url(produktion/tab_og_vind/restart.svg);
+  background-size: cover;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(produktion/gamescreen/gamescreen.svg);
+  background-size: cover;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(#);
+  pointer-events: none;
+}
+
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+}
+#score_board {
+  /* outline: 1px dashed red; */
+  position: absolute;
+  aspect-ratio: 445/480;
+  width: 8%;
+  top: 26.3%;
+  left: 45.8%;
+  background-image: url(produktion/gamescreen/scoreboard.svg);
+  background-size: cover;
+}
+
+/* #time_board {
+  position: absolute;
+  aspect-ratio: 6/30;
+  width: 50px;
+  top: 40.3%;
+  left: 56.3%;
+  background-image: url(produktion/gamescreen/time_board1.svg);
+  background-size: cover;
+} */
+
+#time_container {
+  position: absolute;
+  width: 2.2%;
+  aspect-ratio: 6/30;
+  border: 2px solid black;
+  background-color: rgb(200, 200, 200);
+  top: 40.5%;
+  left: 57.2%;
+}
+
+#time_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center bottom;
+}
+
+#load_container {
+  position: absolute;
+  width: 26%;
+  aspect-ratio: 30/6;
+  border: 2px solid black;
+  background-color: rgb(200, 200, 200);
+  top: 87.5%;
+  left: 70.2%;
+}
+
+#load_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center left;
+}
+
+#points_tekst {
+  position: absolute;
+  top: -6%;
+  left: 10.1%;
+}
+
+#points_tekst h1 {
+  font-size: 1rem;
+}
+
+#point_count {
+  position: absolute;
+  top: 39%;
+  left: 17.1%;
+  font-size: 3rem;
+}
+
+.instruktion_animation {
+  animation-name: instruktion_kf;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+}
+@keyframes instruktion_kf {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#liv1 {
+  position: absolute;
+  aspect-ratio: 60/65;
+  width: 3%;
+  top: 47.3%;
+  left: 46.4%;
+  background-image: url(produktion/gamescreen/liv_single.svg);
+  background-size: cover;
+}
+#liv2 {
+  position: absolute;
+  aspect-ratio: 60/65;
+  width: 3%;
+  top: 47.3%;
+  left: 50.4%;
+  background-image: url(produktion/gamescreen/liv_single.svg);
+  background-size: cover;
+}
+#liv3 {
+  position: absolute;
+  aspect-ratio: 60/65;
+  width: 3%;
+  top: 54.3%;
+  left: 48.4%;
+  background-image: url(produktion/gamescreen/liv_single.svg);
+  background-size: cover;
+}
+
+#putin_box1 {
+  /* outline: red 2px dotted; */
+  position: absolute;
+  aspect-ratio: 380/820;
+  overflow: hidden;
+}
+
+#putin_container1 {
+  width: 100%;
+  height: 100%;
+}
+#putin_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(produktion/zelenskyj_and_putin/putin.svg);
+  background-size: cover;
+}
+
+#zelenskyj_box1 {
+  /* outline: red 2px dotted; */
+  aspect-ratio: 460/840;
+  position: absolute;
+  overflow: hidden;
+}
+
+#zelenskyj_container1 {
+  width: 100%;
+  height: 100%;
+}
+#zelenskyj_sprite1 {
+  /* width: 100%; */
+  height: 100%;
+  background-image: url(produktion/zelenskyj_and_putin/zelenskyj.svg);
+  background-size: cover;
+}
+
+/* positioner for Putin */
+
+.put_pos1 {
+  top: 52%;
+  left: 36.8%;
+  width: 5%;
+}
+
+.put_pos2 {
+  top: 52%;
+  left: 48.8%;
+  width: 5%;
+}
+.put_pos3 {
+  top: 52%;
+  left: 60.3%;
+  width: 5%;
+}
+
+.put_pos4 {
+  top: 54%;
+  left: 62.9%;
+  width: 7%;
+}
+
+.put_pos5 {
+  top: 54%;
+  left: 48%;
+  width: 7%;
+}
+.put_pos6 {
+  top: 54%;
+  left: 32%;
+  width: 7%;
+}
+
+.put_pos7 {
+  top: 54%;
+  left: 25%;
+  width: 10%;
+}
+
+.put_pos8 {
+  top: 54%;
+  left: 46.2%;
+  width: 10%;
+}
+
+.put_pos9 {
+  top: 54%;
+  left: 66.8%;
+  width: 10%;
+}
+
+/* positioner for Zelenskyj */
+.zel_pos1 {
+  top: 55%;
+  left: 36.2%;
+  width: 5%;
+}
+
+.zel_pos2 {
+  top: 55%;
+  left: 48.5%;
+  width: 5%;
+}
+
+.zel_pos3 {
+  top: 55%;
+  left: 60.1%;
+  width: 5%;
+}
+
+.zel_pos4 {
+  top: 58%;
+  left: 62.7%;
+  width: 7%;
+}
+.zel_pos5 {
+  top: 58%;
+  left: 47.9%;
+  width: 7%;
+}
+
+.zel_pos6 {
+  top: 58%;
+  left: 31.9%;
+  width: 7%;
+}
+
+.zel_pos7 {
+  top: 56%;
+  left: 65.8%;
+  width: 11%;
+}
+
+.zel_pos8 {
+  top: 56%;
+  left: 45.4%;
+  width: 11%;
+}
+
+.zel_pos9 {
+  top: 56%;
+  left: 23.9%;
+  width: 11%;
+}
+
+/* animationer
+animationer
+animationer
+animationer
+ */
+
+/* apear animationer */
+.apearbad {
+  animation-name: apearbad_kf;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes apearbad_kf {
+  0% {
+    transform: translatey(100%);
+  }
+  50% {
+    transform: translatey(0%);
+  }
+  100% {
+    transform: translatey(100%);
+  }
+}
+
+.apeargood {
+  animation-name: apeargood_kf;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes apeargood_kf {
+  0% {
+    transform: translatey(100%);
+  }
+  50% {
+    transform: translatey(0%);
+  }
+  100% {
+    transform: translatey(100%);
+  }
+}
+
+/* mini add on clases */
+
+.dont_click {
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+.gray {
+  filter: grayscale(50%);
+}
+
+.pause_ani {
+  animation-play-state: paused;
+}
+
+.delay1 {
+  animation-delay: 0.3s;
+}
+
+.delay2 {
+  animation-delay: 0.7s;
+}
+
+.delay3 {
+  animation-delay: 1s;
+}
+
+.delay4 {
+  animation-delay: 1.5s;
+}
+
+.delay5 {
+  animation-delay: 1.8s;
+}
+
+.speed1 {
+  animation-duration: 0.5s;
+}
+.speed2 {
+  animation-duration: 0.8s;
+}
+
+.speed3 {
+  animation-duration: 1.2s;
+}
+
+.speed4 {
+  animation-duration: 1.5s;
+}
+
+.speed5 {
+  animation-duration: 2s;
+}
+
+/* forsvind animationer */
+.disapeargood {
+  animation-name: disapeargood_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes disapeargood_kf {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.7s);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.disapearbad {
+  animation-name: disapearbad_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes disapearbad_kf {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+.click {
+  animation-name: click_animation_kf;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes click_animation_kf {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(150%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.click_me {
+  animation-name: click_me_kf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+@keyframes click_me_kf {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.time_animation {
+  animation-name: timer_kf;
+  animation-duration: 20s;
+
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes timer_kf {
+  0% {
+    transform: scaley(100%);
+    background-color: limegreen;
+  }
+  50% {
+    transform: scaley(50%);
+    background-color: yellow;
+  }
+
+  100% {
+    transform: scaley(0%);
+    background-color: red;
+  }
+}
+
+.load_animation {
+  animation-name: load_kf;
+  animation-duration: 10s;
+
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes load_kf {
+  0% {
+    transform: scalex(0%);
+    background-color: lightseagreen;
+  }
+  50% {
+    transform: scalex(50%);
+    background-color: lightseagreen;
+  }
+
+  100% {
+    transform: scalex(100%);
+    background-color: lightseagreen;
+  }
+}
+
+.point_text_points h1 {
+  margin: 0;
+  padding-top: 15%;
+}
